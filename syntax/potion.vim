@@ -4,7 +4,8 @@ if exists("b:current_syntax")
     finish
 endif
 
-syntax keyword potionKeyword to times
-highlight link potionKeyword Keyword
+syntax keyword potionKeyword loop times to while
+syntax keyword potionKeyword if elsif else
+syntax keyword potionKeyword class return
 
 let b:current_syntax = "potion"
