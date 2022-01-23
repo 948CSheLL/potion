@@ -40,6 +40,8 @@ syntax match potionNumber "\v[+-]*[0-9]+\.[0-9]+"
 syntax match potionNumber "\v[+-]*[0-9]+\.[0-9]+e[+-]*[0-9]+"
 highlight link potionNumber Number
 
+" 下面的skip 中表达的意思是跳过任何转移字符，\\在magic
+" 模式下表示的是\，.在magic下表示的是任意字符的意思。
 syntax region potionString start=/\v"/ skip=/\v\\./ end=/\v"/
 highlight link potionString String
 
