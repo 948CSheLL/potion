@@ -33,4 +33,7 @@ syntax match potionOperator "\v-\="
 syntax match potionOperator "\v\="
 highlight link potionOperator Operator
 
+syntax match potionNumber "\v[+-]*[0-9]+"
+highlight link potionNumber Number
+
 let b:current_syntax = "potion"
