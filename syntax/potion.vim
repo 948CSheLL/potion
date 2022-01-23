@@ -4,6 +4,7 @@ if exists("b:current_syntax")
     finish
 endif
 
+" 将需要被高亮的关键字加入到相关组中
 syntax keyword potionKeyword loop times to while
 syntax keyword potionKeyword if elsif else
 syntax keyword potionKeyword class return
