@@ -4,7 +4,7 @@ noremap <script> <buffer> <silent> ]] <nop>
 noremap <script> <buffer> <silent> [] <nop>
 noremap <script> <buffer> <silent> ][ <nop>
 
-function! s:NextSection(type, backwards)
+function! s:NextSection(type, backwards, visual)
     if a:visual
         " gv 命令可以恢复上一个可视模式
         normal! gv
