@@ -13,7 +13,6 @@ function! PotionShowBytecode()
     let bytecode = system(g:potion_command . " -c -V " . bufname("%"))
     " Open a new split and set it up.
     vsplit __Potion_Bytecode__
-    sleep 5
     normal! ggdG
     setlocal filetype=potionbytecode
     " 将buftype 赋值成nofile 表明执行该语句的缓冲区与
